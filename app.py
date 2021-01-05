@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    i = random.randint(1, 1000000)
+    i = random.randint(1, 10000000)
     return render_template("index.html", text = i)
 
 if __name__ == "__main__":
